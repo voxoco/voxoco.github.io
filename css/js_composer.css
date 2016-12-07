@@ -10846,6 +10846,7 @@ body .wpb_gallery_slides ul li,
   padding: 0.5em 1em;
   position: relative;
   z-index: 1;
+  color: #000;
 }
 .vc_progress_bar .vc_single_bar .vc_bar {
   display: block;
