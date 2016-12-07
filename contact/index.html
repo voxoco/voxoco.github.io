@@ -8,68 +8,7 @@ title: Contact
                 <div class="content">
                     <article id="post-22">
                         <div class="entry-content">
-                            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1435654014372 vc_row-no-padding">
-                                <div class="wpb_column vc_column_container vc_col-sm-12">
-                                    <div class="wpb_wrapper">
-                                        <div id="map-canvas" class="thememove-gmaps" data-address="31.2852486,-89.4715261" data-height="480" data-width="100%" data-zoom_enable="" data-zoom="16" data-map_type="roadmap" data-map_style="style1"></div>
-                                        <script type="text/javascript">
-                                            jQuery(document).ready(function($) {
-
-                                                var gmMapDiv = $("#map-canvas");
-
-                                                (function($) {
-
-                                                    if (gmMapDiv.length) {
-
-                                                        var gmMarkerAddress = gmMapDiv.attr("data-address");
-                                                        var gmHeight = gmMapDiv.attr("data-height");
-                                                        var gmWidth = gmMapDiv.attr("data-width");
-                                                        var gmZoomEnable = gmMapDiv.attr("data-zoom_enable");
-                                                        var gmZoom = gmMapDiv.attr("data-zoom");
-
-                                                        gmMapDiv.gmap3({
-                                                            action: "init",
-                                                            marker: {
-                                                                address: gmMarkerAddress,
-                                                                options: {
-                                                                    icon: "/images/voxo-faviconmap.png"
-                                                                }
-                                                            },
-                                                            map: {
-                                                                options: {
-                                                                    zoom: parseInt(gmZoom),
-                                                                    zoomControl: true,
-                                                                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                                                                    mapTypeControl: false,
-                                                                    scaleControl: false,
-                                                                    scrollwheel: gmZoomEnable == 'enable'
-                                                                        ? true
-                                                                        : false,
-                                                                    streetViewControl: false,
-                                                                    draggable: true,
-                                                                    styles: [
-                                                                        {
-                                                                            "featureType": "all",
-                                                                            "elementType": "all",
-                                                                            "stylers": [
-                                                                                {
-                                                                                    "saturation": -100
-                                                                                }, {
-                                                                                    "gamma": 0.5
-                                                                                }
-                                                                            ]
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            }
-                                                        }).width(gmWidth).height(gmHeight);
-                                                    }
-                                                })(jQuery);
-                                            });
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class="vc_row-full-width"></div>
                             <div class="vc_row wpb_row vc_row-fluid vc_custom_1435658845572">
 															<div class="wpb_column vc_column_container vc_col-sm-3">
