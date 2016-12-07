@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div id="content" class="site-content">
+    <div class="big-title" style="background-image: url('/images/bg01.jpg')">
+        <div class="container">
+            <h1 class="entry-title" itemprop="headline">{{page.title}}</h1>
+            <div class="breadcrumb">
+                <div class="container">
+                    <ul class="tm_bread_crumb">
+                        <li class="level-1 top">
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="level-2 sub tail current">{{page.title}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+{{ content }}
+    </div>
+  </div>

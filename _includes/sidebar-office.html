@@ -1,0 +1,24 @@
+<div class="wpb_column vc_column_container vc_col-sm-3">
+    <div class="wpb_wrapper">
+        <div class="wpb_widgetised_column wpb_content_element">
+            <div class="wpb_wrapper">
+                <aside id="better-menu-widget-6" class="widget better-menu-widget">
+                    <div class="menu-office-container">
+                        <ul id="menu-office" class="menu">
+                            <li {% if page.url == '/office/overview/' %} class="fa-tachometer menu-item menu-item-type-post_type menu-item-object-page page_item page-item-75007 menu-item-75018 current_page_item current-menu-item" {% endif %} id="menu-item-75018" class="fa-tachometer menu-item menu-item-type-post_type menu-item-object-page page_item page-item-75007 menu-item-75018">
+                                <a href="/office/overview/">Overview</a>
+                            </li>
+                            <li {% if page.url == '/office/how-it-works/' %} class="fa-bar-chart menu-item menu-item-type-post_type menu-item-object-page menu-item-75017 current_page_item current-menu-item" {% endif %} id="menu-item-75017" class="fa-bar-chart menu-item menu-item-type-post_type menu-item-object-page menu-item-75017">
+                                <a href="/office/how-it-works/">How it Works</a>
+                            </li>
+                            <li {% if page.url == '/office/service-plans/' %} class="fa-cube menu-item menu-item-type-post_type menu-item-object-page menu-item-75016 current_page_item current-menu-item" {% endif %} id="menu-item-75016" class="fa-cube menu-item menu-item-type-post_type menu-item-object-page menu-item-75016">
+                                <a href="/office/service-plans/">Service Plans</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                {% include sidebar-contact.html %}
+            </div>
+        </div>
+    </div>
+</div>
