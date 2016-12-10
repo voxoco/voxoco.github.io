@@ -10,10 +10,19 @@ title: Blog
 		<div style="text-align: center;">
 			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
 		</div>
-		<br>
-		<p style="color: rgba(0,0,0, .5);">By {% assign author = site.data.authors[post.author] %} {{ author.name }} on {{post.date | date: "%A, %B %d, %Y"}}</p>
+			<div>
+				<span style="float:left;">
+			<img class="pull-left" style="border-radius: 50%;" src="{% assign author = site.data.authors[post.author] %} {{ author.image }}" width="40px"/>
+		</span>
+		<span style="float:left; padding: 10px 0 0 10px;">
+				<p style="color: rgba(0,0,0, .5);">By {% assign author = site.data.authors[post.author] %} {{ author.name }} on {{post.date | date: "%A, %B %d, %Y"}}</p>
+			</span>
+			</div>
+		<br><br>
 		<p>{{ post.excerpt }}</p>
-		<a style="color: #3498db; float: right;" href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+		<h4 class="widget-title"><span><a class="btn" data-hover="READ MORE" style="float: right;" href="{{ site.baseurl }}{{ post.url }}"><span>Read more</span></a></span></h4>
+		<br><br>
+		<hr>
 		{% endfor %}
 	</div>
 </div>
