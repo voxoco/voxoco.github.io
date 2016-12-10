@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div id="content" class="site-content">
+    <div class="big-title" style="background-image: url('/images/IMG_22391.jpg')">
+        <div class="container">
+            <h1 class="entry-title" itemprop="headline">{{page.title}}</h1>
+            <div class="breadcrumb">
+                <div class="container">
+                    <ul class="tm_bread_crumb">
+                        <li class="level-1 top">
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="level-2 sub"><a href="/blog/">Blog</a></li>
+                        <li class="level-3 sub tail current">{{page.title}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-md-offset-2">
+              <h2 style="text-align: center;padding-bottom: 10px;">{{ page.title }}</h2>
+              <div>
+                <span style="float:left;">
+              <img class="pull-left" style="border-radius: 50%;" src="{% assign author = site.data.authors[page.author] %} {{ author.image }}" width="40px"/>
+            </span>
+            <span style="float:left; padding: 10px 0 0 10px;">
+                <p style="color: rgba(0,0,0, .5);">By {% assign author = site.data.authors[page.author] %} {{ author.name }} on {{page.date | date: "%A, %B %d, %Y"}}</p>
+              </span>
+              </div>
+            </div>
+          </div>
+          <div style="padding-top: 20px;" class="row">
+              <div class="col-md-7 col-md-offset-2">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
