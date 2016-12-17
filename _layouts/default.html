@@ -799,28 +799,6 @@
                 }
             </style>
         </noscript>
-        <script>
-            $(document).ready(function() {
-
-                var activeDiv = 1;
-                showDiv(activeDiv); // show first one because all are hidden by default
-                var timer = setInterval(changeDiv, 4000);
-
-                function changeDiv() {
-                    activeDiv++;
-                    if (activeDiv == 6) {
-                        activeDiv = 1;
-                    }
-                    showDiv(activeDiv);
-                }
-
-                function showDiv(num) {
-                    $('div.display').hide(); // hide all
-                    $('#div' + num).fadeIn(); // show active
-                }
-
-            });
-        </script>
 {% seo %}
     </head>
 
@@ -1752,6 +1730,25 @@
             offers a host of Telecom management services and and Voice over IP solutions. We provide innovative solutions with the best people, processes, and technology to drive uncommon value for your company.", "name": "VOXO", "telephone": "855-750-8647",
             "faxNumber": "855-211-0312", "openingHours": ["Mo-Fr 9:00-17:00"], "geo": { "@type": "GeoCoordinates", "latitude": "31.2857395", "longitude": "-89.4721502" }, "logo": "/images/voxo-final-header.png", "url": "", "email":"info@voxo.co", "hasMap":
             "https://goo.gl/maps/LtmopZqSLyn", "sameAs" : [ "https://www.facebook.com/voxollc", "https://twitter.com/voxollc"] }
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                var activeDiv = 1;
+                showDiv(activeDiv); // show first one because all are hidden by default
+                var timer = setInterval(changeDiv, 4000);
+                function changeDiv() {
+                    activeDiv++;
+                    if (activeDiv == 6) {
+                        activeDiv = 1;
+                    }
+                    showDiv(activeDiv);
+                }
+                function showDiv(num) {
+                    $('div.display').hide(); // hide all
+                    $('#div' + num).fadeIn(); // show active
+                }
+            });
         </script>
 
         <script>
