@@ -15,11 +15,33 @@
          <style type="text/css">
          {% include main.css %}
          </style>
+         <script>
+           var cb = function() {
+           var l = document.createElement('link'); l.rel = 'stylesheet';
+           l.href = '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=4.6.1';
+           var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+           };
+           var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+           webkitRequestAnimationFrame || msRequestAnimationFrame;
+           if (raf) raf(cb);
+           else window.addEventListener('load', cb);
+         </script>
+         <script>
+           var cb = function() {
+           var l = document.createElement('link'); l.rel = 'stylesheet';
+           l.href = '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=4.6.1';
+           var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+           };
+           var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+           webkitRequestAnimationFrame || msRequestAnimationFrame;
+           if (raf) raf(cb);
+           else window.addEventListener('load', cb);
+         </script>
         <style id='infinity-main-inline-css' type='text/css'>
             .playbutton {
                 width: 130px;
                 height: 130px;
-                line-height: 130px;
+                line-height: 55px;
                 border-radius: 90px;
                 background: #e57d04;
                 opacity: 0.75;
@@ -55,14 +77,9 @@
             }
 
         </style>
-        <link rel='stylesheet' id='infinity-font-awesome-css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=4.6.1' type='text/css' media='all'/>
-        <link rel='stylesheet' id='js_composer_front-css' href='/css/js_composer-min.css' type='text/css' media='all'/>
-        <link
-            rel='stylesheet'
-            id='kirki_google_fonts-css'
-            href='//fonts.googleapis.com/css?family=Open+Sans:regular,italic,700,%7COswald:regular,700,400,700,400,400,400,400,300,400,700,700&#038;'
-            type='text/css'
-            media='all'/>
+        <style type="text/css">
+        {% include js_composer-min.css %}
+        </style>
         <style id='kirki-styles-inline-css' type='text/css'>
             @media ( min-width: 62rem ) {
                 .site-branding {
@@ -1742,13 +1759,18 @@
                 $("#site-navigation").headroom({offset: 160});
             });
         </script>
-        <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css' href='//fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&#038;ver=4.6.1' type='text/css' media='all'/>
         <link
             rel='stylesheet'
             id='vc_google_fonts_ubuntu300300italicregularitalic500500italic700700italic-css'
             href='//fonts.googleapis.com/css?family=Ubuntu%3A300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic&#038;ver=4.6.1'
             type='text/css'
             media='all'/>
+            <link
+                rel='stylesheet'
+                id='kirki_google_fonts-css'
+                href='//fonts.googleapis.com/css?family=Open+Sans:regular,italic,700,%7COswald:regular,700,400,700,400,400,400,400,300,400,700,700&#038;'
+                type='text/css'
+                media='all'/>
             <link rel='stylesheet' id='infinity-simple-icons-css' href='//cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.3/css/simple-line-icons.css?ver=4.6.1' type='text/css' media='all'/>
         <script type='text/javascript' src='/js/snap.min.js'></script>
         <script type='text/javascript' src='/js/gmap3.min.js'></script>
