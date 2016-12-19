@@ -28,4 +28,6 @@ Profit!
 
 - Optimized images using [ImageOptim](https://imageoptim.com/mac)
 
+- Added [Formspree](https://formspree.io) for contact forms
+
 - Google PageSpeed score of 89% for desktop and mobile
