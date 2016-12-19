@@ -1,6 +1,8 @@
 # voxoco.github.io
 [VOXO.CO](https://www.voxo.co) - Our 100% full website migrated from Wordpress to [Jekyll](https://jekyllrb.com/) and hosted on [Netlify](https://www.netlify.com/)!
 
+![header](https://lh4.googleusercontent.com/NYTbTdmibGxzo9VUnFqACFm7hULkMOh1VxN8UyghtHl-tPFnNeVElKn5KSGRQaiqcfWeG5ld_w=w2048)
+
 #### HOW IT WAS DONE
 
 1. Used the `wpstatic` handy tool [here](https://github.com/chnm/WP-Static/blob/master/wpstatic) to export the wordpress site to static html files. This grabs all of the assets, blog posts, etc.. and places the pages in their own directory.
