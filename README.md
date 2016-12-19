@@ -1,5 +1,5 @@
 # voxoco.github.io
-VOXO.CO - Our 100% full website migrated from Wordpress to [Jekyll](https://jekyllrb.com/) and hosted on [Netlify](https://www.netlify.com/)! https://www.voxo.co
+[VOXO.CO](https://www.voxo.co) - Our 100% full website migrated from Wordpress to [Jekyll](https://jekyllrb.com/) and hosted on [Netlify](https://www.netlify.com/)!
 
 #### HOW IT WAS DONE
 
