@@ -1,5 +1,5 @@
 # voxoco.github.io
-VOXO.CO - Our 100% full website migrated from Wordpress to Jekyll and hosted on Netlify! https://www.voxo.co
+VOXO.CO - Our 100% full website migrated from Wordpress to [Jekyll](https://jekyllrb.com/) and hosted on [Netlify](https://www.netlify.com/)! https://www.voxo.co
 
 #### HOW IT WAS DONE
 
@@ -20,12 +20,12 @@ Profit!
 
 #### ENHANCEMENTS & PLUGINS
 
-Using jekyll seo for social media sharing and general SEO.
+- Using jekyll seo for social media sharing and general SEO.
 
-Uing somewhat non-conventional way of creating pages. Decided it was easier to sperate pages by adding folders instead of using jekyll permalinks
+- Uing somewhat non-conventional way of creating pages. Decided it was easier to sperate pages by adding folders instead of using jekyll permalinks
 
-Put css in `_includes` so they can be injected in the html files (to eliminate additional http calls)
+- Put css in `_includes` so they can be injected in the html files (to eliminate additional http calls)
 
-Optimized images using [ImageOptim](https://imageoptim.com/mac)
+- Optimized images using [ImageOptim](https://imageoptim.com/mac)
 
-Google PageSpeed score of 89% for desktop and mobile
+- Google PageSpeed score of 89% for desktop and mobile
