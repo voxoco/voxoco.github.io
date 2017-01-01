@@ -809,7 +809,7 @@
   <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/emmhjccekdcfifdpfagbdeaaeghmbajf">
     </head>
     <script>
-    if (chrome.app.isInstalled) {
+    if (document.getElementById('extension-is-installed')) {
       document.getElementById('install-button').style.display = 'none';
     }
     </script>
