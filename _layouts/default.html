@@ -806,6 +806,7 @@
             </style>
         </noscript>
 {% seo %}
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/emmhjccekdcfifdpfagbdeaaeghmbajf">
     </head>
 
     <body class="home page page-id-13 page-template-default group-blog header01 full-width wpb-js-composer js-comp-ver-4.7.4 vc_responsive">
@@ -902,6 +903,9 @@
                                                 </li>
                                                 <li id="menu-item-75259" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75259">
                                                     <a target="_blank" href="http://voxo.zendesk.com/">Technical Support</a>
+                                                </li>
+                                                <li id="menu-item-75259" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75259">
+                                                    <a onclick="chrome.webstore.install()" id="install-button">Install Plugin</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1777,6 +1781,10 @@
         <script type='text/javascript' src='/js/js_composer_front.js'></script>
         <script type='text/javascript' src='https://www.youtube.com/iframe_api?ver=4.7.4'></script>
         <script type='text/javascript' src='/js/skrollr.min.js'></script>
-
+        <script>
+        if (chrome.app.isInstalled) {
+          document.getElementById('install-button').style.display = 'none';
+        }
+        </script>
     </body>
 </html>
