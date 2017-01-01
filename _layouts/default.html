@@ -808,6 +808,11 @@
 {% seo %}
   <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/emmhjccekdcfifdpfagbdeaaeghmbajf">
     </head>
+    <script>
+    if (chrome.app.isInstalled) {
+      document.getElementById('install-button').style.display = 'none';
+    }
+    </script>
 
     <body class="home page page-id-13 page-template-default group-blog header01 full-width wpb-js-composer js-comp-ver-4.7.4 vc_responsive">
         <div class="snap-drawers">
@@ -1781,10 +1786,5 @@
         <script type='text/javascript' src='/js/js_composer_front.js'></script>
         <script type='text/javascript' src='https://www.youtube.com/iframe_api?ver=4.7.4'></script>
         <script type='text/javascript' src='/js/skrollr.min.js'></script>
-        <script>
-        if (chrome.app.isInstalled) {
-          document.getElementById('install-button').style.display = 'none';
-        }
-        </script>
     </body>
 </html>
